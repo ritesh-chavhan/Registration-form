@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form
+      action="mailto:riteshchavhan72@gmail.com?subject= Login form?cc=suraj@gmail.com"
+      method="post"
+      enctype="text/plain">
+      <!-- Fullname -->
+      <label for="Fullname"
+        >Fullname :
+        <input
+          type="text"
+          autocapitalize="15"
+          required
+          placeholder="Enter your name"
+          name="Fullname"
+        /> </label
+      ><br /><br />
+      <!-- Date of Birth -->
+      <label for="date of birth">
+        Date Of Birth :
+        <input type="date" name="date" /> </label
+      ><br /><br />
+      <!-- gender -->
+      <label for="gender">
+        Gender :
+        <input type="radio" name="gender" value="male" />Male
+      </label>
+      <label for="gender">
+        <input type="radio" name="gender" value="female" />Female
+      </label>
+      <label for="gender">
+        <input type="radio" name="gender" value="other" />Other </label
+      ><br /><br />
+      <!-- mobile number -->
+      <label for="mobile number">
+        Mobile Number :
+        <input
+          type="number"
+          pattern="0-9"
+          title="enter only 0 to 9 number"
+          name="number"
+        /> </label
+      ><br /><br />
+      <!-- email -->
+      <label for="email"
+        >Email :
+        <input type="email" placeholder="abc@xyzz.com" name="email" /> </label
+      ><br /><br />
+      <!-- address  -->
+      <label for="address"
+        >Address :
+        <textarea name="address" id="address" name="address"> </textarea></label
+      ><br /><br />
+      <!-- pincode -->
+      <label for="pincode"
+        >Pincode :
+        <input
+          type="text"
+          pattern="{6}"
+          title="enter only six number."
+          name="pincode"
+        /> </label
+      ><br /><br />
+      <!-- city -->
+      <label for="city">City :</label>
+      <select name="city" id="city">
+        <option value="Pune">Pune</option>
+        <option value="nagpur">Nagpur</option>
+        <option value="Amravati">Amravati</option>
+        <option value="sambhajinagar">Sambhaji Nagar</option>
+        <option value="Akola">Akola</option>
+        <option value="washim">Washim</option></select
+      ><br /><br />
+      <!-- state -->
+      <label for="state">State :</label>
+      <select name="state" id="state">
+        <option value="maharashtra">Maharashtra</option>
+        <option value="assam">Aassam</option>
+        <option value="arunachal pradesh">Arunachal Pradesh</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="hariyana">Hariyana</option>
+        <option value="bihar">Bihar</option></select
+      ><br /><br />
+      <!-- profile -->
+      <label for="profile"
+        >Profile Picture :
+        <input
+          type="file"
+          id="file"
+          name="filename"
+          name="profile picture"
+        /> </label
+      ><br /><br />
+      <!-- checkbox -->
+      <input type="checkbox" />
+      <label for="checkbox">Agree to All Term and Condation </label><br /><br />
+      <!-- buttons -->
+      <input type="submit" value="Login" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
